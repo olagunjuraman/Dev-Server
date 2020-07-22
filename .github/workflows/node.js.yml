@@ -47,4 +47,4 @@ jobs:
           cd ~/Dev-Server
           git pull origin master
           npm install --production
-          pm2 restart node-app
+          pm2 restart server
