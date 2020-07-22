@@ -39,10 +39,10 @@ jobs:
     - name: SSH and deploy node app
       uses: appleboy/ssh-action@master
       with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USERNAME }}
         password: ${{ secrets.PASSWORD }}
-        port: ${{ secrets.PORT }}
+        port: ${{ secrets.SSH_PORT }}
        
           cd ~/Dev-Server
           git pull origin master
