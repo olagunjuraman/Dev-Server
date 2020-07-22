@@ -43,7 +43,7 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
-        script: |
+       
           cd ~/Dev-Server
           git pull origin master
           npm install --production
